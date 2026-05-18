@@ -28,6 +28,8 @@
 
             "APP_URL": "https://your-app-name.vercel.app",
 
+            "APP_KEY":"base64:pkRnyueT2MVA3OAQCqoqvzAaTZWMi9PgX6tg5nwCh3U=",
+
             "APP_CONFIG_CACHE": "/tmp/config.php",
 
             "APP_EVENTS_CACHE": "/tmp/events.php",
