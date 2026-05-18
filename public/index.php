@@ -46,9 +46,6 @@ require __DIR__.'/../vendor/autoload.php';
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
-// 🔥 បន្ថែមកូដ ១ បន្ទាត់នេះចូល ដើម្បីដោះស្រាយរឿង Read-only សហការជាមួយ Environment Variables
-$app->useStoragePath('/tmp/storage');
-
 $kernel = $app->make(Kernel::class);
 
 $response = $kernel->handle(
