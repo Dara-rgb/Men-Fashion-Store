@@ -30,6 +30,18 @@ return [
 
     'disks' => [
 
+
+        'supabase' => [
+            'driver' => 's3',
+            'key' => env('SUPABASE_STORAGE_KEY'),
+            'secret' => env('SUPABASE_STORAGE_SECRET'),
+            'region' => env('SUPABASE_STORAGE_REGION', 'ap-southeast-1'), 
+            'bucket' => env('SUPABASE_STORAGE_BUCKET'),
+            'url' => env('SUPABASE_STORAGE_URL'),
+            'endpoint' => env('SUPABASE_STORAGE_ENDPOINT'),
+            'use_path_style_endpoint' => true,
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),

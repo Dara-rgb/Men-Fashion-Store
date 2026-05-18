@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\Storage;
 
 class Picture extends Model
 {
@@ -20,6 +21,24 @@ class Picture extends Model
         'image_picture' => 'array',
     ];
     
+    public function setImagePictureAttribute($value)
+    {
+        // បើវាជា Array នៃ File រូបភាពជាច្រើន
+        if (is_array($value)) {
+            $urls = [];
+            foreach ($value as $file) {
+                if (is_object($file)) {
+                    $path = Storage::disk('supabase')->putFile('gallery', $file);
+                    $urls[] = Storage::disk('supabase')->url($path);
+                } else {
+                    $urls[] = $file; // បើជា URL ស្រាប់ ទុកដដែល
+                }
+            }
+            $this->attributes['image_picture'] = json_encode($urls);
+        } else {
+            $this->attributes['image_picture'] = $value;
+        }
+    }
     
     public function post(): BelongsTo
     {
