@@ -1,5 +1,9 @@
 <?php
 
+// បន្ថែម ២ បន្ទាត់នេះដើម្បីបិទការលោតរំខានរបស់ Carbon Warning
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
+ini_set('display_errors', 0);
+
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Http\Request;
 
