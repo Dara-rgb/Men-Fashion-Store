@@ -1,0 +1,966 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Preahvihear", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: white;
+}
+.tags{
+    background-color: darkred;
+    width: fit-content;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: -3.5px;
+    margin-bottom: -3.725px;
+    border: 2.5px solid darkred;
+}
+.dark-mode .tags:hover{
+        color: white;
+}
+.bg_header_picture{
+    background-color: white;
+}
+.margine_top{
+    margin-top: -0.5px;
+}
+.col-12 .back{
+    float: right;
+    font-family: "Preahvihear", sans-serif;
+    color: darkred;
+    font-size: 15px;
+    margin-top: -32.5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button-back{
+    background-color: white;
+    border: none;
+}
+.bg_gray{
+    background-color: rgb(222, 222, 222);
+}
+.card_caption{
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+}
+.card_caption .card-body .type p{
+    color: darkred;
+    margin-top: -22.5px;
+}
+.post_img{
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+}
+.post_img figure{
+    width:100%; 
+    height:500px;
+    margin-bottom: -7.5px;
+}
+.post_img figure img{
+    width:100%; 
+    height:100%;
+}
+.card{
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    height: 345px;
+    
+}
+.card figure{
+    width:100%; 
+    height:160px;
+    margin-bottom: -7.5px;
+}
+.card figure img{
+    width:100%; 
+    height:100%;
+}
+.discount{
+    color: white;
+    font-size: 30px;
+    opacity: 0;
+    transition: 1s;
+    margin-top: -52.5px;
+    padding-right: 10px;
+    width: fit-content;
+    padding-left: 55px;
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: red;
+    padding-bottom: 7.5px;
+    padding-top: 0px;
+}
+.clip-past-shadow{
+    filter: drop-shadow(3px 0px 3px black);
+}
+.price{
+    
+    color: white;
+    font-size: 15px;
+    margin-top: -22.5px;
+    padding-right: 15px;
+    float: right;
+    width: fit-content;
+    padding-left: 25px;
+    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: darkred;
+    margin-right: -1px;
+    
+}
+.card:hover .discount{
+    opacity: 1;
+}
+
+
+
+.type{
+    padding: 0px;
+    margin-top: -0.5px;
+    margin-bottom: 20px;
+}
+.type h6{
+    width: fit-content;
+    background-color: darkred;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: -2.5px;
+}
+
+.card_margine_bottom{
+    margin-bottom: -10px;
+    
+}
+.card-body .card-text{
+    color:   rgb(50, 50, 50);
+}
+
+.card-model h6{
+    width: fit-content;
+    background-color: darkred;
+    border-bottom-left-radius: 7.5px;
+    border-top-right-radius: 7.5px;
+    padding: 5px 8px;
+    color: white;
+}
+.card-model span{
+    margin-top: -32.5px;
+    font-size: 15px;
+    color: darkred;
+}
+.card-footer{
+    background-color: darkred;
+    margin-bottom: -15px;
+}
+.card-footer .buy_skip{
+    margin-top: -33.5px;
+    margin-bottom: -5px;
+    
+}
+.card-footer .buy_skip a{
+    text-decoration: none;
+}
+.card-footer .buy_skip a .buy{
+    font-size: 13.5px;
+    color: white;
+}
+.card-footer .text-muted p{
+    color: white;
+    margin-top: 0.5px;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+
+.icon{
+    margin-left: 3.5px;
+}
+.contact{
+    font-size: 30px;
+    margin-top: -50.5px;
+}
+.dark-mode .contact a{
+    color: rgb(50, 50, 50);
+}
+.contact a{
+    color: white;
+}
+.on-footer{
+    background-color: red;
+    margin-bottom: -140px;
+}
+.on-footer h5{
+    color: white;
+    font-size: 17.5px;
+}
+
+.on-footer p{
+    color: white;
+}
+.dark-mode .on-footer p{
+    color:  rgb(50, 50, 50);
+}
+.col-6-img .phone{
+    margin-top: -10px;
+    
+}
+.col-6-img .phone  p{
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.col-6-img .phone p img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.address{
+    
+    margin-top: -10px;
+}
+.footer{
+    background-color: red;
+    height: 500px;
+}
+.footer .row-footer .col-12-footer img{
+    width: 500px;
+    height: 500px;
+    margin-bottom: -900px;
+}
+
+.dark-mode {
+    background-color: rgb(50, 50, 50);
+}
+
+.btn-circle{
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-top: -0px;
+    box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+    position: fixed;
+    right: 7px;
+}
+.btn-circle i{
+    margin-top: 3px;
+    font-size: 16.5px;
+}
+.moon{
+    display: none;
+}
+.dark-mode .moon{
+    background-color: white;
+    color: rgb(50, 50, 50);
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-top: -0px;
+    box-shadow: 0 0 5px 2.5px white;
+    display: block;
+}
+.dark-mode .tags{
+    background-color: red;
+    width: fit-content;
+    padding: 10px 40px;
+    color: rgb(50, 50, 50);
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: -3.5px;
+    margin-bottom: -3.725px;
+    border: 2.5px solid red;
+}
+.dark-mode .bg_header_picture{
+    background-color: rgb(50, 50, 50);
+}
+.dark-mode .col-12 .back{
+    float: right;
+    font-family: "Preahvihear", sans-serif;
+    color: red;
+    font-size: 15px;
+    margin-top: -32.5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.dark-mode .bg_gray{
+    background-color: rgb(35, 35, 35);
+}
+.dark-mode .card_caption .card-body .type p{
+    color: red;
+    margin-top: -22.5px;
+}
+.dark-mode .type h6{
+    width: fit-content;
+    background-color: red;
+    color: rgb(50, 50, 50);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: -2.5px;
+}
+.dark-mode .card-text p{
+    color: white;
+}
+.dark-mode .card-model h6{
+    color: rgb(50, 50, 50);
+    background-color: red;
+}
+.dark-mode span{
+    color: red;
+}
+.dark-mode .card-footer{
+    background-color: red;
+}
+.dark-mode .card-footer .text-muted p{
+    color: rgb(50, 50, 50);
+}
+.dark-mode .card{
+    background-color: rgb(50, 50, 50);
+}
+.dark-mode .price{
+    color: rgb(50, 50, 50);
+    background-color: red;
+}
+.dark-mode  .buy_skip a .buy{
+    color: rgb(50, 50, 50);
+}
+.in_footer{
+    background-color: darkred;
+}
+/* Fullscreen image viewer */
+#imageModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 0px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0,0.5);
+}
+
+#imageModal img {
+    display: block;
+    margin: auto;
+    max-width: 75%;
+    max-height: 100%;
+}
+
+#imageModal span {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.dark-mode #imageModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 0px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+.dark-mode #imageModal span {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: rgb(50, 50, 50);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.in_footer {
+						background-color: #f8f9fa; /* ឬពណ៌ dark តាមចិត្តបង */
+						border-top: 1px solid #ddd;
+					}
+
+					/* តុបតែងប្រអប់ Icon */
+					.icon-box {
+						width: 40px;
+						height: 40px;
+						background-color: #323232;
+						color: white;
+						border-radius: 50%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 16px;
+						box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+					}
+
+					/* តុបតែងអត្ថបទ */
+					.label-footer {
+						font-size: 12px;
+						color: #888;
+						text-transform: uppercase;
+						font-weight: bold;
+						margin-bottom: -2px;
+					}
+
+					.value-footer {
+						font-size: 15px;
+						color: #333;
+						font-weight: 500;
+					}
+
+					/* តុបតែង Logo */
+					.footer-logo {
+						width: 90px;
+						height: auto;
+						filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+						transition: transform 0.3s ease;
+					}
+
+					.footer-logo:hover {
+						transform: scale(1.1);
+					}
+
+                    .dark-mode .in_footer {
+						background-color: rgb(50, 50, 50); /* ឬពណ៌ dark តាមចិត្តបង */
+						border-top: 1px solid black;
+					}
+
+                     /* តុបតែងប្រអប់ Icon */
+					.dark-mode .icon-box {
+						width: 40px;
+						height: 40px;
+						background-color: white;
+						color: #323232;
+						border-radius: 50%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 16px;
+						box-shadow: 0 4px 6px rgba(202, 202, 202, 0.9);
+					}
+
+                    .dark-mode .label-footer {
+						font-size: 12px;
+						color: #000000;
+						text-transform: uppercase;
+						font-weight: bold;
+						margin-bottom: -2px;
+					}
+
+                    .dark-mode .value-footer {
+						font-size: 15px;
+						color: white;
+						font-weight: 500;
+					}
+
+                    .dark-mode .footer-logo {
+						width: 90px;
+						height: auto;
+						filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+						transition: transform 0.3s ease;
+					}
+
+                    .dark-mode .footer-logo:hover {
+						transform: scale(1.1);
+					}
+
+@media (max-width: 344px) {
+         /* Fullscreen image viewer */
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        #imageModal img {
+            display: block;
+            margin: auto;
+            max-width: 90%;
+            max-height: 100%;
+        }
+
+        #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .dark-mode #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(255, 255, 255,0.5);
+        }
+
+        .dark-mode #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: rgb(50, 50, 50);
+            font-size: 40px;
+            cursor: pointer;
+        }
+}    
+@media (min-width: 344px) and (max-width: 390px) {
+        /* Fullscreen image viewer */
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        #imageModal img {
+            display: block;
+            margin: auto;
+            max-width: 90%;
+            max-height: 100%;
+        }
+
+        #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .dark-mode #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(255, 255, 255,0.5);
+        }
+
+        .dark-mode #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: rgb(50, 50, 50);
+            font-size: 40px;
+            cursor: pointer;
+        }
+    
+}
+@media (min-width: 390px) and (max-width: 430px) {    
+        /* Fullscreen image viewer */
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        #imageModal img {
+            display: block;
+            margin: auto;
+            max-width: 90%;
+            max-height: 100%;
+        }
+
+        #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .dark-mode #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(255, 255, 255,0.5);
+        }
+
+        .dark-mode #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: rgb(50, 50, 50);
+            font-size: 40px;
+            cursor: pointer;
+        }
+        
+}
+@media (min-width: 430px) and (max-width: 576px) {
+        /* Fullscreen image viewer */
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        #imageModal img {
+            display: block;
+            margin: auto;
+            max-width: 90%;
+            max-height: 100%;
+        }
+
+        #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .dark-mode #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(255, 255, 255,0.5);
+        }
+
+        .dark-mode #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: rgb(50, 50, 50);
+            font-size: 40px;
+            cursor: pointer;
+        }
+    
+}
+@media (min-width: 576px) and (max-width: 690px) {    
+        /* Fullscreen image viewer */
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        #imageModal img {
+            display: block;
+            margin: auto;
+            max-width: 85%;
+            max-height: 100%;
+        }
+
+        #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .dark-mode #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(255, 255, 255,0.5);
+        }
+
+        .dark-mode #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: rgb(50, 50, 50);
+            font-size: 40px;
+            cursor: pointer;
+        }
+    
+}
+@media (min-width: 690px) and (max-width: 768px) {
+        /* Fullscreen image viewer */
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        #imageModal img {
+            display: block;
+            margin: auto;
+            max-width: 85%;
+            max-height: 100%;
+        }
+
+        #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .dark-mode #imageModal {
+                display: none;
+                position: fixed;
+                z-index: 9999;
+                padding-top: 0px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(255, 255, 255,0.5);
+            }
+
+            .dark-mode #imageModal span {
+                position: absolute;
+                top: 20px;
+                right: 40px;
+                color: rgb(50, 50, 50);
+                font-size: 40px;
+                cursor: pointer;
+            }
+    
+}
+@media (min-width: 768px) and (max-width: 882px) {
+         /* Fullscreen image viewer */
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        #imageModal img {
+            display: block;
+            margin: auto;
+            max-width: 85%;
+            max-height: 100%;
+        }
+
+        #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .dark-mode #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(255, 255, 255,0.5);
+        }
+
+        .dark-mode #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: rgb(50, 50, 50);
+            font-size: 40px;
+            cursor: pointer;
+        }
+     
+}
+@media (min-width: 882px) and (max-width: 992px) {
+         /* Fullscreen image viewer */
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        #imageModal img {
+            display: block;
+            margin: auto;
+            max-width: 80%;
+            max-height: 100%;
+        }
+
+        #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .dark-mode #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(255, 255, 255,0.5);
+        }
+
+        .dark-mode #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: rgb(50, 50, 50);
+            font-size: 40px;
+            cursor: pointer;
+        }
+     
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+         /* Fullscreen image viewer */
+        #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        #imageModal img {
+            display: block;
+            margin: auto;
+            max-width: 80%;
+            max-height: 100%;
+        }
+
+        #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .dark-mode #imageModal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(255, 255, 255,0.5);
+        }
+
+        .dark-mode #imageModal span {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: rgb(50, 50, 50);
+            font-size: 40px;
+            cursor: pointer;
+        }
+        
+}

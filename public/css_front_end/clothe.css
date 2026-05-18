@@ -1,0 +1,1516 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Preahvihear", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: white;
+}
+.brand-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 27.5px;
+    font-weight: bolder;
+    text-shadow: 0px 1.5px 2px rgb(75, 0, 0);
+}
+.logo_shadow{
+    filter: drop-shadow(0px 2.5px 2.5px rgb(50, 50, 50));
+}
+.dark-mode .logo_shadow{
+    filter: drop-shadow(0px 2.5px 2.5px white);
+}
+.dark-mode .brand-title{
+    color: white;
+    text-shadow: 0px 1.5px 2px rgb(75, 0, 0);
+}
+.dark-mode .brand-title:hover{
+    color: white;
+    text-shadow: 0px 1.5px 2px rgb(75, 0, 0);
+}
+.bg_secondary{
+    background-color: darkred;
+}
+.input_search{
+    background-color: white;
+    border: 0px;
+    color: rgb(50, 50, 50);
+}
+.input_search::placeholder{
+    color: rgb(50, 50, 50);
+}
+.input_search:focus{
+    color: rgb(50, 50, 50);
+}
+/* បង្ខំឱ្យផ្ទៃខាងក្រោយនៅតែជាពណ៌ Dark ទោះបីជា Browser Autofill ក៏ដោយ */
+.input_search:-webkit-autofill,
+.input_search:-webkit-autofill:hover, 
+.input_search:-webkit-autofill:focus,
+.input_search:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;  /* keep black background */
+    -webkit-text-fill-color: rgb(50, 50, 50) !important;               /* change autofilled text color */
+                                   /* optional: white border on focus */
+    outline: 3px solid white;
+    caret-color: rgb(50, 50, 50);                                       /* optional: caret color */
+}
+
+.dark-mode .input_search:-webkit-autofill,
+.dark-mode .input_search:-webkit-autofill:hover, 
+.dark-mode .input_search:-webkit-autofill:focus,
+.dark-mode .input_search:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(50, 50, 50) inset !important;  /* keep black background */
+    -webkit-text-fill-color: white !important;               /* change autofilled text color */
+                                   /* optional: white border on focus */
+    outline: 3px solid rgb(50, 50, 50);
+    caret-color: white;                                       /* optional: caret color */
+}
+
+/* សម្រាប់បំបាត់ពណ៌ផ្ទៃខៀវខ្ចីពេលចុចរើស */
+.button-search{
+    background-color: white;
+    color: rgb(50,50,50);
+    border: 2px solid rgb(50,50,50);
+}
+.button-search:hover{
+    background-color: white;
+    color: rgb(50,50,50);
+    border: 2px solid rgb(50,50,50);
+}
+
+.show_img i{
+    color: rgb(50,50,50);
+}
+.show_img .img_img{
+    color: rgb(50,50,50);
+}
+.show_img span{
+    color: rgb(50,50,50);
+}
+.brand{
+    font-size: 45px;
+}
+.brand a{
+    color: darkred;
+}
+.tag{
+    background-color: darkred;
+    width: fit-content;
+    padding: 10px 40px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 17.5px;
+}
+.col-12 a{
+    float: right;
+    color: darkred;
+    font-size: 15px;
+    margin-top: -32.5px;
+    text-decoration: none;
+    font-family: "Preahvihear", sans-serif;
+}
+.col-12 .continue{
+    float: right;
+    font-family: "Preahvihear", sans-serif;
+    color: darkred;
+    font-size: 15px;
+    margin-top: -54.5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.col-12 .back{
+    float: right;
+    font-family: "Preahvihear", sans-serif;
+    color: darkred;
+    font-size: 15px;
+    margin-top: -30.5px;
+    text-decoration: none;
+}
+/* category_clothe */
+
+/*post*/
+.card_skip a{
+    text-decoration: none;
+    color: black;
+}
+.dark-mode .post{
+    /*box-shadow: 6px 8px 5px rgb(24, 24, 24);*/
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+.post{
+    /*box-shadow: 6px 8px 5px rgb(186, 186, 186);*/
+    background-color: white;
+    width: 100%;
+    height: 345px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.post figure{
+    width: 100%;
+    height: 160px;
+    margin-bottom: 14px;
+    overflow: hidden;
+}
+.post figure img{
+    width: 100%;
+    height: 100%;
+}
+.post figure img:hover{
+    transform: scale(1.5);
+    transition: 1.5s;
+}
+.post figure img:not( :hover ){
+    transition: 1.5s;
+}
+.right-right{
+    float: right;
+}
+.price{
+    
+    color: white;
+    font-size: 15px;
+    margin-top: -22px;
+    margin-right: -0.5px;
+    padding-right: 12.5px;
+    float: right;
+    width: fit-content;
+    padding-left: 20px;
+    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: darkred;
+}
+.post:hover .discount{
+    opacity: 1;
+}
+
+.dark-mode .discount{
+    color: rgb(50, 50, 50);
+}
+.dark-mode .category{
+    color: rgb(50, 50, 50);
+}
+.dark-mode .price {
+    color: rgb(50, 50, 50);
+}
+.type{
+    padding: 0px;
+    margin-top: -117.5px;
+    margin-bottom: 20px;
+}
+.type h6{
+    width: fit-content;
+    background-color: darkred;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: -2.5px;
+}
+.dark-mode .type h6{
+    color: rgb(50, 50, 50);
+}
+.float-right{
+    font-size: 13px;
+    margin-top: -18px;
+    margin-left: 5px;
+    color: darkred;
+}
+.card-body{
+    width: 100%;
+    height: 40px;
+    margin-top: 100.5px;
+    margin-bottom: 0px;
+}
+.card-text p{
+    margin-top: -10px;
+    float: left;
+    font-size: 12px;  
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.dark-mode .card-text p{
+    color: white;
+}
+.card-model{
+    
+    margin-top: 87.5px;
+}
+.card-model h6{
+    width: fit-content;
+    background-color: darkred;
+    border-bottom-left-radius: 7.5px;
+    border-top-right-radius: 7.5px;
+    padding: 5px 8px;
+    font-size: 10px;
+    color: white;
+    margin-top: 1.5px;
+}
+.dark-mode .card-model h6{
+    color: rgb(50, 50, 50);
+}
+.card-model span{
+    margin-top: -25px;
+    color: darkred;
+    font-size: 10px;
+    margin-left: 144.5px;
+}
+
+.card-footer{
+    margin-top: 0px;
+    padding-top: 9px;
+    background-color: darkred;
+}
+.text-muted p{
+    margin-top: 7px;
+    font-size: 10px;
+    color: white;
+}
+.dark-mode .buy{
+    color: rgb(50, 50, 50);
+}
+.buy{
+    font-size: 12.5px;
+    margin-top: -31.75px;
+    color: white;
+    margin-right: -5px;
+}
+/*clothe*/
+.Margin_top_clothe{
+    margin-top: 19px;
+}
+.padding_left_right{
+    padding-left: -20px;
+    padding-right: -20px;
+}
+.category_clothe{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.category_clothe a{
+    color: darkred;
+}
+
+/*Arrow_slide*/
+
+/*.Arrow_next{
+    
+    color: darkred;
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: -50px;
+    margin-bottom: -142px;
+}
+.Arrow_prev{
+    
+    float: right;
+    color: darkred;
+    font-size: 40px;
+    cursor: pointer;
+    margin-right: -50px;
+}
+
+.Arrow_next_else{
+    
+    color: white;
+    font-size: 40px;
+    margin-left: -50px;
+    margin-bottom: -142px;
+}
+.Arrow_prev_else{
+    
+    float: right;
+    color: white;
+    font-size: 40px;
+    margin-right: -50px;
+}*/
+
+.table-container {
+  overflow-x: auto;       /* Enable horizontal scroll */
+  width: 100%;            /* Container width */
+  max-width: 1380px;       /* Optional: limit visible width */
+  scrollbar-width: none;
+  margin-top: 62.5px;
+}
+
+.columns {
+  display: flex;          /* Horizontal layout */
+  min-width: 100%;        /* Allow scrolling (6 cols > container width) */
+  
+}
+
+.column {
+  flex: 0 0 25%;
+  padding: 10px;
+  text-align: center;
+}
+.column a{
+    color: darkred;
+    font-size: 30px;
+}
+.dark-mode {
+    background-color: rgb(50, 50, 50);
+}
+
+.btn-circle-new{
+        background-color: white;
+        color: rgb(50, 50, 50);
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px white;
+    }
+    .sun-new{
+        display: block;
+    }
+    .dark-mode .sun-new{
+        display: none;
+    }
+    .moon-new{
+        display: none;
+    }
+    .dark-mode .moon-new{
+        background-color: rgb(50, 50, 50);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+        display: block;
+    }
+
+.dark-mode .bg_secondary{
+    background-color: red;
+}
+.dark-mode .brand a{
+    font-size: 45px;
+    color: red;
+}
+.dark-mode .tag{
+    background-color: red;
+    width: fit-content;
+    padding: 10px 40px;
+    color: rgb(50, 50, 50);
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 17.5px;
+}
+.dark-mode .col-12 a{
+    float: right;
+    color:  red;
+    font-size: 15px;
+    margin-top: -32.5px;
+    text-decoration: none;
+    font-family: "Preahvihear", sans-serif;
+}
+.dark-mode .col-12 .continue{
+    float: right;
+    font-family: "Preahvihear", sans-serif;
+    color: red;
+    font-size: 15px;
+    margin-top: -54.5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.dark-mode .price{
+    
+    color: rgb(50, 50, 50);
+    font-size: 15px;
+    margin-top: -22px;
+    margin-right: -0.5px;
+    padding-right: 12.5px;
+    float: right;
+    width: fit-content;
+    padding-left: 20px;
+    clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: red;
+}
+.dark-mode .type h6{
+    width: fit-content;
+    background-color: red;
+    color: rgb(50, 50, 50);
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: -2.5px;
+}
+.dark-mode .card-body .type p{
+    color: red;
+}
+.dark-mode .card-model span{
+    color: red;
+}
+.dark-mode .card-model h6{
+    width: fit-content;
+    background-color: red;
+    border-bottom-left-radius: 7.5px;
+    border-top-right-radius: 7.5px;
+    padding: 5px 8px;
+    font-size: 10px;
+    color: rgb(50, 50, 50);
+    margin-top: 1.5px;
+}
+.dark-mode .card-footer{
+    margin-top: 0px;
+    padding-top: 9px;
+    background-color: red;
+}
+.dark-mode .text-muted p{
+    margin-top: 7px;
+    font-size: 10px;
+    color: rgb(50, 50, 50);
+}
+.dark-mode .input_search{
+    background-color: rgb(50, 50, 50);
+    border: 0px;
+    color: white;
+}
+.dark-mode .input_search::placeholder{
+    color: white;
+}
+.dark-mode .input_search:focus{
+    color: white;
+}
+.dark-mode .button-search{
+    background-color: rgb(50,50,50);
+    color: white;
+    border: 2px solid white;
+}
+.dark-mode .button-search:hover{
+    background-color: rgb(50,50,50);
+    color: white;
+    border: 2px solid white;
+}
+.dark-mode .show_img i{
+    color: white;
+}
+.dark-mode .show_img .img_img{
+    color: white;
+}
+.dark-mode .show_img span{
+    color: white;
+}
+.blue_primary{
+    background-color: white;
+}
+.gray_secondary{
+    background-color: white;
+}
+.dark-mode .blue_primary{
+    background-color: rgb(50,50,50);
+}
+.dark-mode .gray_secondary{
+    background-color: rgb(50,50,50);
+}
+.dark-mode .column a{
+    color: red;
+    font-size: 30px;
+}
+.bg_qr_code{
+    background-color: white;
+}
+.dark-mode .bg_qr_code{
+    background-color: rgb(35,35,35);
+}
+.dark-mode .bg_qr_code h3{
+    color: white;
+}
+.dark-mode .bg_qr_code h5{
+    color: white;
+}
+.dark-mode .bg_qr_code p{
+    color: white;
+}
+.dark-mode .bg_qr_code .checking{
+    color: white;
+}
+.dark-mode #back-back{
+    background-color: white;
+    color: rgb(50,50,50);
+}
+
+.dark-mode .alert_for_darkmode{
+    display: block;
+     background-color: rgb(0, 90, 90);
+     border: 0.75px solid rgb(0, 90, 90);
+     color: aquamarine;
+}
+.alert_for_darkmode i{
+    color: green;
+}
+.dark-mode .alert-warning{
+    background-color: #332b12; /* លឿង-ត្នោត ក្រម៉ៅ */
+    color: #ffda6a;            /* លឿងស្រាល បែប Pastel */
+    border: 1px solid #664d03;
+}
+.dark-mode .alert_for_darkmode i{
+    color: lightgreen;
+}
+.dark-mode .bg_recipt_darkmode{
+    color: white;
+    background-color:rgb(50,50,50);
+}
+.dark-mode .bg_recipt_darkmode .paymented{
+    color: white;
+}
+.dark-mode .bg_recipt_darkmode .modal-footer{
+    color: white;
+    background-color:rgb(50,50,50);
+}
+.dark-mode .bg_total_price{
+    border: 1px solid rgb(35, 35, 35);
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+.dark-mode .bg_list{
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+.dark-mode .bg_seller{
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+.dark-mode .bg_footer{
+    background-color: rgb(50, 50, 50);
+}
+.dark-mode .border_under{
+    border-bottom: 1px solid rgb(50, 50, 50);
+}
+.dark-mode .border_under h5{
+    color: rgb(50, 50, 50);
+}
+.dark-mode .bg_footer button{
+    color: rgb(50, 50, 50);
+}
+.dark-mode .bg_footer .btn_another_colors{
+    color: rgb(50,50,50);
+}
+
+.dark-mode .bg_footer .btn_another_items{
+    color: rgb(60,60,60);
+    background-color: white;
+}
+.dark-mode .bg_footer .btn_another_items:hover{
+    color: rgb(60,60,60);
+    background-color: rgb(190, 190, 190);
+}
+.bg_footer .btn_another_items{
+    color: white;
+    background-color: rgb(60,60,60);
+
+}
+.bg_footer .btn_another_items:hover{
+    color: white;
+    background-color: rgb(35,35,35);
+}
+.not_found{
+    color: rgb(50, 50, 50);
+}
+.dark-mode .not_found{
+    color: white;
+}
+.in_footer {
+						background-color: #f8f9fa; /* ឬពណ៌ dark តាមចិត្តបង */
+						border-top: 1px solid #ddd;
+					}
+
+					/* តុបតែងប្រអប់ Icon */
+					.icon-box {
+						width: 40px;
+						height: 40px;
+						background-color: #323232;
+						color: white;
+						border-radius: 50%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 16px;
+						box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+					}
+
+					/* តុបតែងអត្ថបទ */
+					.label-footer {
+						font-size: 12px;
+						color: #888;
+						text-transform: uppercase;
+						font-weight: bold;
+						margin-bottom: -2px;
+					}
+
+					.value-footer {
+						font-size: 15px;
+						color: #333;
+						font-weight: 500;
+					}
+
+					/* តុបតែង Logo */
+					.footer-logo {
+						width: 90px;
+						height: auto;
+						
+						transition: transform 0.3s ease;
+					}
+
+					.footer-logo:hover {
+						transform: scale(1.1);
+					}
+
+                    .dark-mode .in_footer {
+						background-color: rgb(50, 50, 50); /* ឬពណ៌ dark តាមចិត្តបង */
+						border-top: 1px solid black;
+					}
+
+                     /* តុបតែងប្រអប់ Icon */
+					.dark-mode .icon-box {
+						width: 40px;
+						height: 40px;
+						background-color: white;
+						color: #323232;
+						border-radius: 50%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 16px;
+						box-shadow: 0 4px 6px rgba(202, 202, 202, 0.9);
+					}
+
+                    .dark-mode .label-footer {
+						font-size: 12px;
+						color: #000000;
+						text-transform: uppercase;
+						font-weight: bold;
+						margin-bottom: -2px;
+					}
+
+                    .dark-mode .value-footer {
+						font-size: 15px;
+						color: white;
+						font-weight: 500;
+					}
+
+                    .dark-mode .footer-logo {
+						width: 90px;
+						height: auto;
+						
+						transition: transform 0.3s ease;
+					}
+
+                    .dark-mode .footer-logo:hover {
+						transform: scale(1.1);
+					}
+
+                    .dark-mode .text_color_cancel_buy{
+                        color: rgb(50, 50, 50);
+                    }
+                    .dark-mode .text_color_cancel_buy:hover{
+                        color: rgb(50, 50, 50);
+                    }
+                    .announcement{
+                        background-color: rgba(139, 0, 0, 0.5);
+                        color: black;
+                        font-size: 27.5px;
+                    }
+                    .dark-mode .announcement{
+                        background-color: rgba(255, 0, 0, 0.5);
+                        color: white;
+                        font-size: 27.5px;
+                    }
+@media (max-width: 344px) {
+         .navbar-toggler {
+            border-color: rgb(50, 50, 50) !important; /* កែពណ៌ស៊ុម */
+            background-color: darkred !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: rgb(50, 50, 50) !important;
+        }
+        .dark-mode .navbar-toggler {
+            border-color: white !important; /* កែពណ៌ស៊ុម */
+            background-color: red !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: white !important;
+        }
+        .brand a{
+            font-size: 30px;
+        }
+        .dark-mode .brand a{
+            font-size: 30px !important;
+        }
+    .brand-title{
+            font-size: 20px;
+        }
+    .btn-circle-new{
+        background-color: white;
+        color: rgb(50, 50, 50);
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px white;
+        margin-top: -55px;
+        float: right;
+        margin-right: 15px;
+    }
+    .sun-new{
+        display: block;
+    }
+    .dark-mode .sun-new{
+        display: none;
+    }
+    .moon-new{
+        display: none;
+    }
+    .dark-mode .moon-new{
+        background-color: rgb(50, 50, 50);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+        display: block;
+    }
+    .columns{
+        margin-top: -10px;
+    }
+    .column a{
+        color: darkred;
+        font-size: 12.5px;
+    }
+    .dark-mode .column a{
+        color: red;
+        font-size: 12.5px;
+    }
+    .tag{
+    background-color: darkred;
+    width: fit-content;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 7.5px;
+    font-size: 15px;
+    margin-top: 17.5px;
+    }
+    .col-12 .continue{
+        float: right;
+        font-family: "Preahvihear", sans-serif;
+        color: darkred;
+        font-size: 12.5px;
+        margin-top: -47px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .dark-mode .tag{
+        background-color: red;
+        width: fit-content;
+        padding: 8px 30px;
+        color: rgb(50, 50, 50);;
+        border-radius: 7.5px;
+        font-size: 15px;
+        margin-top: 17.5px;
+    }
+    .dark-mode .col-12 .continue{
+        float: right;
+        font-family: "Preahvihear", sans-serif;
+        color: red;
+        font-size: 12.5px;
+        margin-top: -47px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+     .announcement{
+        background-color: rgba(139, 0, 0, 0.5);
+        color: black;
+        font-size: 17.5px;
+    }
+    .dark-mode .announcement{
+        background-color: rgba(255, 0, 0, 0.5);
+        color: white;
+        font-size: 17.5px;
+    }
+}    
+@media (min-width: 344px) and (max-width: 390px) {
+    .navbar-toggler {
+            border-color: rgb(50, 50, 50) !important; /* កែពណ៌ស៊ុម */
+            background-color: darkred !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: rgb(50, 50, 50) !important;
+        }
+        .dark-mode .navbar-toggler {
+            border-color: white !important; /* កែពណ៌ស៊ុម */
+            background-color: red !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: white !important;
+        }
+        .brand a{
+            font-size: 30px;
+        }
+        .dark-mode .brand a{
+            font-size: 30px !important;
+        }
+    .brand-title{
+            font-size: 20px;
+        }
+    .btn-circle-new{
+        background-color: white;
+        color: rgb(50, 50, 50);
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px white;
+        margin-top: -55px;
+        float: right;
+        margin-right: 35px;
+    }
+    .sun-new{
+        display: block;
+    }
+    .dark-mode .sun-new{
+        display: none;
+    }
+    .moon-new{
+        display: none;
+    }
+    .dark-mode .moon-new{
+        background-color: rgb(50, 50, 50);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+        display: block;
+    }
+    .columns{
+        margin-top: -10px;
+    }
+    .column a{
+        color: darkred;
+        font-size: 12.5px;
+    }
+    .dark-mode .column a{
+        color: red;
+        font-size: 12.5px;
+    }
+    .tag{
+    background-color: darkred;
+    width: fit-content;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 7.5px;
+    font-size: 15px;
+    margin-top: 17.5px;
+    }
+    .col-12 .continue{
+        float: right;
+        font-family: "Preahvihear", sans-serif;
+        color: darkred;
+        font-size: 12.5px;
+        margin-top: -47px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .dark-mode .tag{
+        background-color: red;
+        width: fit-content;
+        padding: 8px 30px;
+        color: rgb(50, 50, 50);;
+        border-radius: 7.5px;
+        font-size: 15px;
+        margin-top: 17.5px;
+    }
+    .dark-mode .col-12 .continue{
+        float: right;
+        font-family: "Preahvihear", sans-serif;
+        color: red;
+        font-size: 12.5px;
+        margin-top: -47px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .announcement{
+        background-color: rgba(139, 0, 0, 0.5);
+        color: black;
+        font-size: 17.5px;
+    }
+    .dark-mode .announcement{
+        background-color: rgba(255, 0, 0, 0.5);
+        color: white;
+        font-size: 17.5px;
+    }
+}
+@media (min-width: 390px) and (max-width: 430px) {    
+        .navbar-toggler {
+            border-color: rgb(50, 50, 50) !important; /* កែពណ៌ស៊ុម */
+            background-color: darkred !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: rgb(50, 50, 50) !important;
+        }
+        .dark-mode .navbar-toggler {
+            border-color: white !important; /* កែពណ៌ស៊ុម */
+            background-color: red !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: white !important;
+        }
+        .brand a{
+            font-size: 30px;
+        }
+        .dark-mode .brand a{
+            font-size: 30px !important;
+        }
+        .brand-title{
+            font-size: 25px;
+        }
+        .btn-circle-new{
+        background-color: white;
+        color: rgb(50, 50, 50);
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px white;
+        margin-top: -55px;
+        float: right;
+        margin-right: 80px;
+    }
+    .sun-new{
+        display: block;
+    }
+    .dark-mode .sun-new{
+        display: none;
+    }
+    .moon-new{
+        display: none;
+    }
+    .dark-mode .moon-new{
+        background-color: rgb(50, 50, 50);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+        display: block;
+    }
+    .columns{
+        margin-top: -10px;
+    }
+    .column a{
+        color: darkred;
+        font-size: 12.5px;
+    }
+    .dark-mode .column a{
+        color: red;
+        font-size: 12.5px;
+    }
+    .tag{
+    background-color: darkred;
+    width: fit-content;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 7.5px;
+    font-size: 15px;
+    margin-top: 17.5px;
+    }
+    .col-12 .continue{
+        float: right;
+        font-family: "Preahvihear", sans-serif;
+        color: darkred;
+        font-size: 12.5px;
+        margin-top: -47px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .dark-mode .tag{
+        background-color: red;
+        width: fit-content;
+        padding: 8px 30px;
+        color: rgb(50, 50, 50);;
+        border-radius: 7.5px;
+        font-size: 15px;
+        margin-top: 17.5px;
+    }
+    .dark-mode .col-12 .continue{
+        float: right;
+        font-family: "Preahvihear", sans-serif;
+        color: red;
+        font-size: 12.5px;
+        margin-top: -47px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+     .announcement{
+        background-color: rgba(139, 0, 0, 0.5);
+        color: black;
+        font-size: 17.5px;
+    }
+    .dark-mode .announcement{
+        background-color: rgba(255, 0, 0, 0.5);
+        color: white;
+        font-size: 17.5px;
+    }
+}
+@media (min-width: 430px) and (max-width: 576px) {
+    .navbar-toggler {
+            border-color: rgb(50, 50, 50) !important; /* កែពណ៌ស៊ុម */
+            background-color: darkred !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: rgb(50, 50, 50) !important;
+        }
+        .dark-mode .navbar-toggler {
+            border-color: white !important; /* កែពណ៌ស៊ុម */
+            background-color: red !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: white !important;
+        }
+        .brand a{
+            font-size: 30px;
+        }
+        .dark-mode .brand a{
+            font-size: 30px !important;
+        }
+    .btn-circle-new{
+        background-color: white;
+        color: rgb(50, 50, 50);
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px white;
+        margin-top: -55px;
+        float: right;
+        margin-right: 120px;
+    }
+    .sun-new{
+        display: block;
+    }
+    .dark-mode .sun-new{
+        display: none;
+    }
+    .moon-new{
+        display: none;
+    }
+    .dark-mode .moon-new{
+        background-color: rgb(50, 50, 50);
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+        display: block;
+    }
+    .columns{
+        margin-top: -10px;
+    }
+    .column a{
+        color: darkred;
+        font-size: 12.5px;
+    }
+    .dark-mode .column a{
+        color: red;
+        font-size: 12.5px;
+    }
+    .tag{
+    background-color: darkred;
+    width: fit-content;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 7.5px;
+    font-size: 15px;
+    margin-top: 17.5px;
+    }
+    .col-12 .continue{
+        float: right;
+        font-family: "Preahvihear", sans-serif;
+        color: darkred;
+        font-size: 12.5px;
+        margin-top: -47px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .dark-mode .tag{
+        background-color: red;
+        width: fit-content;
+        padding: 8px 30px;
+        color: rgb(50, 50, 50);;
+        border-radius: 7.5px;
+        font-size: 15px;
+        margin-top: 17.5px;
+    }
+    .dark-mode .col-12 .continue{
+        float: right;
+        font-family: "Preahvihear", sans-serif;
+        color: red;
+        font-size: 12.5px;
+        margin-top: -47px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+     .announcement{
+        background-color: rgba(139, 0, 0, 0.5);
+        color: black;
+        font-size: 20px;
+    }
+    .dark-mode .announcement{
+        background-color: rgba(255, 0, 0, 0.5);
+        color: white;
+        font-size: 20px;
+    }
+}
+@media (min-width: 576px) and (max-width: 690px) {    
+    .navbar-toggler {
+            border-color: rgb(50, 50, 50) !important; /* កែពណ៌ស៊ុម */
+            background-color: darkred !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: rgb(50, 50, 50) !important;
+        }
+        .dark-mode .navbar-toggler {
+            border-color: white !important; /* កែពណ៌ស៊ុម */
+            background-color: red !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: white !important;
+        }
+        .brand a{
+            font-size: 30px;
+        }
+        .dark-mode .brand a{
+            font-size: 30px !important;
+        }
+        .btn-circle-new{
+        background-color: white;
+        color: rgb(50, 50, 50);
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px white;
+        margin-top: -47.66px;
+        float: right;
+        margin-right: 15px;
+        }
+        .sun-new{
+            display: block;
+        }
+        .dark-mode .sun-new{
+            display: none;
+        }
+        .moon-new{
+            display: none;
+        }
+        .dark-mode .moon-new{
+            background-color: rgb(50, 50, 50);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+            display: block;
+        }
+        .columns{
+        margin-top: -10px;
+        }
+        .column a{
+            color: darkred;
+            font-size: 12.5px;
+        }
+        .dark-mode .column a{
+            color: red;
+            font-size: 12.5px;
+        }
+        .tag{
+        background-color: darkred;
+        width: fit-content;
+        padding: 8px 30px;
+        color: white;
+        border-radius: 7.5px;
+        font-size: 15px;
+        margin-top: 17.5px;
+        }
+        .col-12 .continue{
+            float: right;
+            font-family: "Preahvihear", sans-serif;
+            color: darkred;
+            font-size: 12.5px;
+            margin-top: -47px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .dark-mode .tag{
+            background-color: red;
+            width: fit-content;
+            padding: 8px 30px;
+            color: rgb(50, 50, 50);;
+            border-radius: 7.5px;
+            font-size: 15px;
+            margin-top: 17.5px;
+        }
+        .dark-mode .col-12 .continue{
+            float: right;
+            font-family: "Preahvihear", sans-serif;
+            color: red;
+            font-size: 12.5px;
+            margin-top: -47px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .announcement{
+            background-color: rgba(139, 0, 0, 0.5);
+            color: black;
+            font-size: 20px;
+        }
+        .dark-mode .announcement{
+            background-color: rgba(255, 0, 0, 0.5);
+            color: white;
+            font-size: 20px;
+        }
+    }
+@media (min-width: 690px) and (max-width: 768px) {
+    .navbar-toggler {
+            border-color: rgb(50, 50, 50) !important; /* កែពណ៌ស៊ុម */
+            background-color: darkred !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: rgb(50, 50, 50) !important;
+        }
+        .dark-mode .navbar-toggler {
+            border-color: white !important; /* កែពណ៌ស៊ុម */
+            background-color: red !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: white !important;
+        }
+        .brand a{
+            font-size: 30px;
+        }
+        .dark-mode .brand a{
+            font-size: 30px !important;
+        }
+        .btn-circle-new{
+        background-color: white;
+        color: rgb(50, 50, 50);
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px white;
+        margin-top: -47.50px;
+        float: right;
+        margin-right: 130px;
+        }
+        .sun-new{
+            display: block;
+        }
+        .dark-mode .sun-new{
+            display: none;
+        }
+        .moon-new{
+            display: none;
+        }
+        .dark-mode .moon-new{
+            background-color: rgb(50, 50, 50);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+            display: block;
+        }
+        .columns{
+        margin-top: -10px;
+        }
+        .column a{
+            color: darkred;
+            font-size: 20px !important;
+        }
+        .dark-mode .column a{
+            color: red;
+            font-size: 20px;
+        }
+        .tag{
+        background-color: darkred;
+        width: fit-content;
+        padding: 8px 30px;
+        color: white;
+        border-radius: 7.5px;
+        font-size: 15px;
+        margin-top: 17.5px;
+        }
+        .col-12 .continue{
+            float: right;
+            font-family: "Preahvihear", sans-serif;
+            color: darkred;
+            font-size: 15px;
+            margin-top: -47px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .dark-mode .tag{
+            background-color: red;
+            width: fit-content;
+            padding: 8px 30px;
+            color: rgb(50, 50, 50);;
+            border-radius: 7.5px;
+            font-size: 15px;
+            margin-top: 17.5px;
+        }
+        .dark-mode .col-12 .continue{
+            float: right;
+            font-family: "Preahvihear", sans-serif;
+            color: red;
+            font-size: 15px;
+            margin-top: -47px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .announcement{
+            background-color: rgba(139, 0, 0, 0.5);
+            color: black;
+            font-size: 20px;
+        }
+        .dark-mode .announcement{
+            background-color: rgba(255, 0, 0, 0.5);
+            color: white;
+            font-size: 20px;
+        }
+    }
+@media (min-width: 768px) and (max-width: 882px) {
+     .navbar-toggler {
+            border-color: rgb(50, 50, 50) !important; /* កែពណ៌ស៊ុម */
+            background-color: darkred !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: rgb(50, 50, 50) !important;
+        }
+        .dark-mode .navbar-toggler {
+            border-color: white !important; /* កែពណ៌ស៊ុម */
+            background-color: red !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: white !important;
+        }
+        .btn-circle-new{
+        background-color: white;
+        color: rgb(50, 50, 50);
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px white;
+        margin-top: -47.5px;
+        float: right;
+        margin-right: 207.5px;
+        }
+        .sun-new{
+            display: block;
+        }
+        .dark-mode .sun-new{
+            display: none;
+        }
+        .moon-new{
+            display: none;
+        }
+        .dark-mode .moon-new{
+            background-color: rgb(50, 50, 50);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+            display: block;
+        }
+         .announcement{
+        background-color: rgba(139, 0, 0, 0.5);
+        color: black;
+        font-size: 20px;
+        }
+        .dark-mode .announcement{
+            background-color: rgba(255, 0, 0, 0.5);
+            color: white;
+            font-size: 20px;
+        }
+}
+
+@media (min-width: 882px) and (max-width: 992px) {
+     .navbar-toggler {
+            border-color: rgb(50, 50, 50) !important; /* កែពណ៌ស៊ុម */
+            background-color: darkred !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: rgb(50, 50, 50) !important;
+        }
+        .dark-mode .navbar-toggler {
+            border-color: white !important; /* កែពណ៌ស៊ុម */
+            background-color: red !important; /* កែពណ៌ផ្ទៃខាងក្រោយ (បើចង់) */
+            outline: none !important; /* លុបស៊ុមខៀវពេលចុច (Focus) */
+            color: white !important;
+        }
+        .btn-circle-new{
+        background-color: white;
+        color: rgb(50, 50, 50);
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px white;
+        margin-top: -47.5px;
+        float: right;
+        margin-right: 320px;
+        }
+        .sun-new{
+            display: block;
+        }
+        .dark-mode .sun-new{
+            display: none;
+        }
+        .moon-new{
+            display: none;
+        }
+        .dark-mode .moon-new{
+            background-color: rgb(50, 50, 50);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+            display: block;
+        }
+         .announcement{
+        background-color: rgba(139, 0, 0, 0.5);
+        color: black;
+        font-size: 22.5px;
+        }
+        .dark-mode .announcement{
+            background-color: rgba(255, 0, 0, 0.5);
+            color: white;
+            font-size: 22.5px;
+        }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+        .btn-circle-new{
+        background-color: white;
+        color: rgb(50, 50, 50);
+        border: none;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 0 5px 2.5px white;
+        margin-top: -0px;
+        float: right;
+        margin-right: 0px;
+        }
+        .sun-new{
+            display: block;
+        }
+        .dark-mode .sun-new{
+            display: none;
+        }
+        .moon-new{
+            display: none;
+        }
+        .dark-mode .moon-new{
+            background-color: rgb(50, 50, 50);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+            display: block;
+        }
+        .announcement{
+        background-color: rgba(139, 0, 0, 0.5);
+        color: black;
+        font-size: 25px;
+        }
+        .dark-mode .announcement{
+            background-color: rgba(255, 0, 0, 0.5);
+            color: white;
+            font-size: 25px;
+        }
+}
+

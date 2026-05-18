@@ -1,0 +1,541 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Preahvihear", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: white;
+}
+.alert{
+    color: rgb(50, 50, 50);
+}
+.dark-mode .alert{
+    color: white;
+}
+.btn-circle-img{
+    width: 40px;
+    height: 40px;
+    margin-top: -55px;
+    box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+    position: fixed;
+    right: 7px;
+}
+.dark-mode .btn-circle-img{
+    width: 40px;
+    height: 40px;
+    margin-top: -55px;
+    box-shadow: 0 0 5px 2.5px white;
+    position: fixed;
+    right: 7px;
+}
+.border_admin{
+    border: 1px rgb(50, 50, 50) solid;
+}
+.dark-mode .border_admin{
+    border: 1px white solid;
+}
+.logo_shadow{
+    filter: drop-shadow(0px 2.5px 2.5px rgb(50, 50, 50));
+}
+.dark-mode .logo_shadow{
+    filter: drop-shadow(0px 2.5px 2.5px white);
+}
+
+.name_phone{
+    width: 100%;
+    height: 200px;
+}
+.name_phone p{
+    color: rgb(50, 50, 50);
+}
+.dark-mode .name_phone p{
+    color: white;
+}
+.address{
+    width: 100%;
+    height: 200px;
+}
+.address p{
+    color: rgb(50, 50, 50);
+}
+.dark-mode .address p{
+    color: white;
+}
+.cover{
+    width: 100%;
+    height: 400px ;
+}
+.cover figure{
+    width: 100%;
+    height: 100.3%;
+    
+}
+.cover figure img{
+    width: 100%;
+    height: 100%;
+}
+.bg_secondary{
+    background-color: gray;
+}
+.dark-mode .bg_secondary{
+    background-color: rgb(30, 30, 30);
+}
+.bg_brandname{
+    background-color: gray;
+}
+.dark-mode .bg_brandname{
+    background-color: rgb(30, 30, 30);
+}
+.bg_search{
+    background-color: gray;
+}
+.dark-mode .bg_search{
+    background-color: rgb(30, 30, 30);
+}
+.input_search{
+    background-color: white;
+    color: rgb(50, 50, 50);
+}
+.input_search::placeholder{
+    color: rgb(50, 50, 50);
+}
+.input_search:focus{
+    color: rgb(50, 50, 50);
+    border: 1px solid rgb(50,50,50);
+}
+.dark-mode .input_search{
+    background-color: rgb(50, 50, 50);
+    color: white; /* default text color */
+    border: 1px solid rgb(50, 50, 50);
+    outline: none;
+}
+.dark-mode .input_search::placeholder{
+    color: white;
+}
+
+.dark-mode .input_search:focus{
+    color: white;   
+} 
+
+.input_search:-webkit-autofill,
+.input_search:-webkit-autofill:focus,
+.input_search:-webkit-autofill:hover,
+.input_search:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;  /* keep black background */
+    -webkit-text-fill-color: rgb(50, 50, 50) !important;               /* change autofilled text color */
+                                   /* optional: white border on focus */
+    outline: 3px solid white;
+    caret-color: rgb(50,50,50);                                      /* optional: caret color */
+    border: 1px solid rgb(50,50,50);
+}
+
+.dark-mode .input_search:-webkit-autofill,
+.dark-mode .input_search:-webkit-autofill:focus,
+.dark-mode .input_search:-webkit-autofill:hover,
+.dark-mode .input_search:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(50, 50, 50) inset !important;  /* keep black background */
+    -webkit-text-fill-color: white !important;               /* change autofilled text color */
+                                   /* optional: white border on focus */
+    outline: 3px solid rgb(50, 50, 50);
+    caret-color: white;                                       /* optional: caret color */
+    border: 1px solid white;
+}
+
+.ifm_csm:-webkit-autofill,
+.ifm_csm:-webkit-autofill:focus,
+.ifm_csm:-webkit-autofill:hover,
+.ifm_csm:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;  /* keep black background */
+    -webkit-text-fill-color: rgb(50, 50, 50) !important;               /* change autofilled text color */
+                                   /* optional: white border on focus */
+    outline: 3px solid white;
+    caret-color: rgb(50, 50, 50);                                       /* optional: caret color */
+    border: 1px solid rgb(50,50,50);
+}
+
+.dark-mode .ifm_csm:-webkit-autofill,
+.dark-mode .ifm_csm:-webkit-autofill:focus,
+.dark-mode .ifm_csm:-webkit-autofill:hover,
+.dark-mode .ifm_csm:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgb(50, 50, 50) inset !important;  /* keep black background */
+    -webkit-text-fill-color: white !important;               /* change autofilled text color */
+                                   /* optional: white border on focus */
+    outline: 3px solid rgb(50, 50, 50);
+    caret-color: white;                                       /* optional: caret color */
+    border : 1px solid white;
+}
+
+.ifm_csm::placeholder {
+    color: rgb(50, 50, 50);      /* ដាក់ពណ៌សសិន */
+    opacity: 0.4;        /* កម្រិតភាពច្បាស់ (0.1 ស្រាលបំផុត - 1.0 ច្បាស់បំផុត) */
+    font-weight: 300;    /* ធ្វើឱ្យអក្សររាងស្ដើង */
+    font-size: 0.9rem;   /* បង្រួមទំហំបន្តិច (បើចង់) */
+}
+.dark-mode .ifm_csm::placeholder {
+    color: white !important;      /* ដាក់ពណ៌សសិន */
+    opacity: 0.4;        /* កម្រិតភាពច្បាស់ (0.1 ស្រាលបំផុត - 1.0 ច្បាស់បំផុត) */
+    font-weight: 300;    /* ធ្វើឱ្យអក្សររាងស្ដើង */
+    font-size: 0.9rem;   /* បង្រួមទំហំបន្តិច (បើចង់) */
+}
+
+.button-search{
+    background-color: white;
+    color: rgb(50,50,50);
+    border: 2px solid rgb(50,50,50);
+}
+.button-search:hover{
+    background-color: white;
+    color: rgb(50,50,50);
+    border: 2px solid rgb(50,50,50);
+}
+.dark-mode .button-search{
+    background-color: rgb(50,50,50);
+    color: white;
+    border: 2px solid white;
+}
+.dark-mode .button-search:hover{
+    background-color: rgb(50,50,50);
+    color: white;
+    border: 2px solid white;
+}
+.sidebar-menu {
+ 
+    height: 100%; /* Allows it to grow based on content */
+    overflow: auto; /* Enables scrolling when needed */
+    scrollbar-width: none;
+}
+.header_left{
+    margin-left: 85px;
+    margin-top: -62.5px;
+    color: rgb(30, 30, 30);
+    text-shadow:  0px 1.5px 2px rgb(50, 50, 50);
+}
+.dark-mode .header_left{
+    margin-left: 85px;
+    margin-top: -62.5px;
+    color: white;
+    text-shadow:  0px 1.5px 2px rgb(150, 150, 150);
+}
+h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 37.5px;
+}
+h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    
+}
+.btn_search_I{
+    margin-top: -50px;
+    float: right;
+}
+li{
+    margin-top: 5px;
+}
+.type_bg_data{
+    background-color: white !important;
+    border-radius: 10px;
+}
+.type_text_data{
+    color: rgb(50,50,50);
+}
+li:hover {
+   background-color: rgb(150, 150, 150);
+   margin-top: 5px;
+   border-radius: 10px;
+}
+li a:hover{
+    color: rgb(50,50,50);
+}
+.dark-mode .type_bg_data{
+    background-color: rgb(50,50,50) !important;
+    border-radius: 10px;
+}
+.dark-mode .type_text_data{
+    color: white;
+}
+.dark-mode li:hover {
+   background-color: rgb(35.5, 35.5, 35.5);
+   margin-top: 5px;
+   border-radius: 10px;
+}
+.dark-mode li a:hover{
+    color: white;
+}
+.bg-data{
+    background-color: white;
+}
+.text-btn{
+    color: white;
+}
+.text-btn:hover{
+    color: rgb(50, 50, 50);
+}
+.dark-mode {
+    background-color: rgb(50, 50, 50);
+}
+
+.dark-mode .bg-data{
+    background-color: rgb(50, 50, 50);
+}
+.dark-mode .dark{
+    color: white;
+}
+.dark-mode .text-btn{
+    color: rgb(50, 50, 50);
+}
+.dark-mode .text-btn:hover{
+    color: white;
+}
+.btn-circle{
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-top: -55px;
+    box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+    position: fixed;
+    right: 7px;
+}
+.btn-circle i{
+    margin-top: 6px;
+    font-size: 16.5px;
+}
+.moon{
+    display: none;
+}
+.dark-mode .moon{
+    background-color: white;
+    color: rgb(50, 50, 50);
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-top: -55px;
+    box-shadow: 0 0 5px 2.5px white;
+    display: block;
+}
+.btn-darkk{
+    background-color:rgb(50, 50, 50);
+    color: white;
+}
+.btn-darkk:hover{
+    color: gray;
+}
+.dark-mode .btn-darkk{
+    color:rgb(50, 50, 50);
+    background-color: white;
+}
+.dark-mode .btn-darkk:hover{
+    color: gray
+}
+.turn-back{
+    position: fixed;
+    right: 29.22px;
+}
+.table-bg-color{
+    
+    background-color: rgb(50, 50, 50);
+    color:white;
+}
+.table-wrapper {
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 100%;
+    position: relative;
+    max-height: 85vh; /* optional: limit vertical height to activate sticky */
+    scrollbar-width: none;
+}
+
+.table-min-width {
+    min-width: 1250px;
+    margin-top: 12px;
+}
+.table-min-width-contact{
+    min-width: 1500px;
+    margin-top: 12px;
+}
+.table-sticky {
+    position: sticky;
+    top: -1px;
+    z-index: 3;
+     /* Ensure sticky rows appear above */
+}
+.table-color-thead-r{
+    border-right: 1px white solid !important;
+    border-left: 1px rgb(50, 50, 50) solid !important;
+    border-top: 1px rgb(50, 50, 50) solid !important;
+    border-bottom: 1px rgb(50, 50, 50) solid !important;
+}
+.table-color-thead-l{
+    border-left: 1px white solid !important;
+    border-right: 1px rgb(50, 50, 50) solid !important;
+    border-top: 1px rgb(50, 50, 50) solid !important;
+    border-bottom: 1px rgb(50, 50, 50) solid !important;
+}
+.table-color{
+    border: 1px rgb(50, 50, 50) solid !important;
+}
+.table-text-color{
+    color: rgb(50, 50, 50);
+}
+.table-text-color a{
+    color: rgb(50, 50, 50) !important;
+}
+.table-text-color a button{
+    color: rgb(50, 50, 50) !important;
+}
+.dark-mode .table-bg-color{
+    background-color: white;
+    color:rgb(50, 50, 50);
+}
+.dark-mode .table-color-thead-r{
+    border-right: 1px rgb(50, 50, 50) solid !important;
+    border-left: 1px white solid !important;
+    border-top: 1px white solid !important;
+    border-bottom: 1px white solid !important;
+}
+.dark-mode .table-color-thead-l{
+    border-left: 1px rgb(50, 50, 50) solid !important;
+    border-right: 1px white solid !important;
+    border-top: 1px white solid !important;
+    border-bottom: 1px white solid !important;
+}
+.dark-mode .table-color{
+    border: 1px white solid !important;
+}
+.dark-mode .table-text-color{
+    color: white;
+}
+.dark-mode .table-text-color a{
+    color: white !important;
+}
+.dark-mode .table-text-color a button{
+    color: white !important;
+}
+.card{
+    background-color: white;
+    color: rgb(50, 50, 50);
+    border: 1px rgb(50, 50, 50) solid;
+}
+.card-header{
+    background-color: white;
+    color: rgb(50, 50, 50);
+    border-bottom: 1px rgb(50, 50, 50) solid;
+}
+.card-body input{
+    border: 1px rgb(50, 50, 50) solid;
+}
+.card-body select{
+    border: 1px rgb(50, 50, 50) solid;
+}
+.card .card-body img{
+    border: 1px rgb(50,50,50) solid;
+}
+.dark-mode .card .card-body img{
+    border: 1px white solid;
+}
+.dark-mode .card{
+    border: 1px white solid;
+    background-color: rgb(50, 50, 50) ;
+    color: white;
+}
+.dark-mode .card-header{
+    background-color: rgb(50, 50, 50);
+    color: white;
+    border-bottom: 1px white solid;
+}
+.dark-mode .card-body input{
+    border: 1px white solid;
+    background-color: rgb(50, 50, 50) ;
+    color: white;
+}
+.dark-mode .card-body select{
+    border: 1px white solid;
+}
+.dark-mode .card-body input::placeholder{
+    color: white;
+}
+.dark-mode .card-body select{
+    background-color: rgb(50, 50, 50) ;
+    color: white;
+}
+.dark-mode form button{
+    color: rgb(50, 50, 50) ;
+}
+.dark-mode form button:hover{
+    color: rgb(50, 50, 50) ;
+}
+.dark-mode #ok-ok:active{
+    color: rgb(50,50,50) !important;
+}
+#back-back{
+    background-color: rgb(50, 50, 50) ;
+    color: white;
+}
+#back-back:active{
+    background-color: rgb(50, 50, 50) ;
+    color: white
+}
+.dark-mode #back-back{
+    background-color: white;
+    color: rgb(50, 50, 50) ;
+}
+.new_back{
+    background-color:rgb(50, 50, 50) ;
+    color: white;
+}
+.dark-mode .new_back{
+    background-color: white;
+    color: rgb(50, 50, 50) ;
+}
+.logout{
+    margin-right:96.5px !important;
+    box-shadow: 0 0 5px 2.5px rgb(50, 50, 50);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logout i{
+    color:rgb(50, 50, 50);
+}
+.dark-mode .logout{
+    margin-right:96.5px !important;
+    box-shadow: 0 0 5px 2.5px white;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark-mode .logout i{
+    color:white;
+}
+.dark-mode #btn-submit:disabled {
+    color: rgb(50, 50, 50) !important;   /* ពណ៌ខ្មៅសុទ្ធ */
+}
+
+#agree_terms:checked {
+    background-color: #ffffff !important; /* ផ្ទៃខាងក្រោយពណ៌ស */
+    border-color: #000000 !important;     /* ស៊ុមពណ៌ខ្មៅ */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e") !important;
+    /* កូដ SVG ខាងលើនេះគឺជាសញ្ញាធិកពណ៌ខ្មៅ (stroke='%23000') */
+}
+#agree_terms:focus {
+    background-color: #ffffff !important; /* ផ្ទៃខាងក្រោយពណ៌ស */
+    border-color: #000000 !important;     /* ស៊ុមពណ៌ខ្មៅ */
+    
+}
+.dark-mode #agree_terms:checked {
+    background-color: rgb(50, 50, 50) !important; /* ផ្ទៃខាងក្រោយពណ៌ស */
+    border-color: white !important;     /* ស៊ុមពណ៌ខ្មៅ */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e") !important;
+    /* កូដ SVG ខាងលើនេះគឺជាសញ្ញាធិកពណ៌ខ្មៅ (stroke='%23000') */
+}
+.dark-mode #agree_terms:focus {
+    background-color: rgb(50, 50, 50) !important; /* ផ្ទៃខាងក្រោយពណ៌ស */
+    border-color: white !important;     /* ស៊ុមពណ៌ខ្មៅ */
+}
