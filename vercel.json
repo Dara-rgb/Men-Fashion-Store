@@ -1,6 +1,8 @@
 {
     "version": 2,
     "framework": null,
+    "buildCommand": "mkdir -p public",
+    "outputDirectory": ".",
     "functions": {
         "api/index.php": {
             "runtime": "vercel-php@0.8.0"
@@ -17,7 +19,7 @@
         },
         {
             "src": "/(.*)",
-            "dist": "api/index.php"
+            "dest": "api/index.php"
         }
     ]
 }
