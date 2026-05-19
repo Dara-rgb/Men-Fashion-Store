@@ -79,7 +79,7 @@
                                                         <div class="post position-relative">
 															<input type="checkbox" class="post-checkbox" value="{{ $st->id }}"  style="position: absolute; top: 10px; left: 10px; z-index: 10; width: 20px; height: 20px;">
 																<figure>
-																		<img src="{{ asset('storage/' . $st->image) }}"  class="img-fluid card-img-top" alt="...">																																																							
+																		<img src="https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/{{ basename($st->image) }}"  class="img-fluid card-img-top" alt="...">																																																							
 																		
 																		<div class="right-right">
 																																						
