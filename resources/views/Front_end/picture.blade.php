@@ -88,22 +88,26 @@
                                                 @php
                                                     $images = json_decode($st->image_picture);
                                                 @endphp
-                                                @foreach($images as $image)
-                                                    @php
-                                                        
-                                                        $supabaseUrl = "https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/" . basename($image);
-                                                    @endphp
-                                                    <img loading="lazy" src="{{ $supabaseUrl }}"  class="img-fluid card-img-top" alt="..." onclick="showImage('{{ asset('storage/' . $image) }}')" style="cursor: pointer;">
-                                                    <div id="imageModal">
-                                                        <span onclick="closeImage()">&times;</span>
-                                                        <img id="modalImg">
-                                                    </div>
-                                                    <div class="right-right">
-                                                                                                                                                            
-                                                        <p class="price">{{$st->post->price}}$</p>
-                                                    </div>
-                                                @endforeach																																																						
-                                                                            
+                                                @if(is_array($images) || is_object($images))
+                                                    @foreach($images as $image)
+                                                        @php
+                                                            
+                                                            $supabaseUrl = "https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/" . basename($image);
+                                                        @endphp
+                                                        <img loading="lazy" src="{{ $supabaseUrl }}"  class="img-fluid card-img-top" alt="..." onclick="showImage('{{ asset('storage/' . $image) }}')" style="cursor: pointer;">
+                                                        <div id="imageModal">
+                                                            <span onclick="closeImage()">&times;</span>
+                                                            <img id="modalImg">
+                                                        </div>
+                                                        <div class="right-right">
+                                                                                                                                                                
+                                                            <p class="price">{{$st->post->price}}$</p>
+                                                        </div>
+                                                    @endforeach																																																						
+                                                 @else
+                                                        {{-- បើផលិតផលនោះគ្មានរូបភាពច្រើនសន្លឹកទេ គឺឱ្យវាបង្ហាញរូបភាពជំនួស ឬទុកទទេ --}}
+                                                        <p class="text-muted">No multiple images available</p>
+                                                @endif                       
                                                     
                                             </figure>
                                             <div class="card-body card_margine_bottom" dir="ltr">
