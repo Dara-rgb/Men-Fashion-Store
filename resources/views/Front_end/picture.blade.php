@@ -87,13 +87,19 @@
                                             <figure>
                                                 @php
                                                     
-                                                    preg_match_all('/[a-zA-Z0-9_-]+\.(jpg|jpeg|png|webp)/i', $st->image_picture, $matches);
+                                                    $raw_data = '';
+                                                    if (isset($st->image_picture)) {
+                                                        $raw_data = $st->image_picture;
+                                                    } elseif (isset($st->pictures) && is_object($st->pictures)) {
+                                                        $raw_data = $st->pictures->image_picture;
+                                                    }
+
                                                     
-                                                    
+                                                    preg_match_all('/[a-zA-Z0-9_-]+\.(jpg|jpeg|png|webp)/i', $raw_data, $matches);
                                                     $images = isset($matches[0]) ? $matches[0] : [];
                                                 @endphp
                                                 
-                                                @if(is_array($images) && count($images) > 0)
+                                                @if(count($images) > 0)
                                                     @foreach($images as $image)
                                                         @php
                                                             $supabaseUrl = "https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/" . $image;
