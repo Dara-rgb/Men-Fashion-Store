@@ -86,36 +86,36 @@
                                             </div>
                                             <figure>
                                                 @php
-                                                    // ១. លាងសម្អាតសញ្ញា Slash និងសញ្ញាធ្មេញកណ្ដុរដែលជាន់គ្នាចេញឱ្យអស់ពី String
+                                                    
                                                     $clean_string = $st->image_picture;
                                                     
-                                                    // ជម្រុះសញ្ញា \ និងសញ្ញាធ្មេញកណ្ដុរដែលនៅសងខាង
+                                                    
                                                     $clean_string = str_replace('\\\\', '\\', $clean_string);
                                                     $clean_string = trim($clean_string, '"');
                                                     $clean_string = stripslashes($clean_string);
                                                     
-                                                    // ២. បំបែកវាទៅជា Array (សាកល្បងវិធី decode ទាំងពីរជាន់)
+                                                    
                                                     $images = json_decode($clean_string, true);
                                                     
                                                     if (!is_array($images)) {
                                                         $images = json_decode($st->image_picture, true);
                                                     }
                                                     
-                                                    // ករណីចុងក្រោយបើនៅតែមិនមែន Array យើងប្រើវិធីដកយកឈ្មោះហ្វាយតាមសញ្ញាក្បៀស
+                                                    
                                                     if (!is_array($images)) {
                                                         $raw_clean = str_replace(['[', ']', '"', '\\', 'images/'], '', $st->image_picture);
                                                         $images = array_filter(explode(',', $raw_clean));
                                                     }
                                                 @endphp
 
-                                                {{-- 🌟 ត្រួតពិនិត្យ បើមានឈ្មោះហ្វាយរូបភាពនៅក្នុង Array ពិតមែន ទើបឱ្យវាបង្ហាញ --}}
+                                               
                                                 @if(is_array($images) && count($images) > 0)
                                                     @foreach($images as $image)
                                                     @php
-                                                        // ដកយកតែឈ្មោះហ្វាយរូបភាពខាងចុងសុទ្ធ (ឧទាហរណ៍៖ 03pag...jpg)
+                                                       
                                                         $fileName = basename(str_replace('\\', '/', $image));
                                                         
-                                                        // ផ្សំផ្លូវ URL ទៅកាន់ Supabase Storage ឱ្យត្រឹមត្រូវ
+                                                       
                                                         $supabaseUrl = "https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/" . $fileName;
                                                     @endphp
                                                         <img loading="lazy" src="{{ $supabaseUrl }}"  class="img-fluid card-img-top" alt="..." onclick="showImage('{{ asset('storage/' . $image) }}')" style="cursor: pointer;">
