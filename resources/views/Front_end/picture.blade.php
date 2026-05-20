@@ -67,7 +67,7 @@
                                 <div class="col-12 p-1">
                                     <div class="post_img">
                                         <figure>
-												<img src="{{ asset('storage/' . $pos->image) }}"  class="img-fluid card-img-top" alt="...">																																																							
+												<img src="https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/{{ basename($pos->image) }}"  class="img-fluid card-img-top" alt="...">																																																							
 										</figure>
                                         
                                         
