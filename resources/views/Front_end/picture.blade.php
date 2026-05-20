@@ -87,23 +87,16 @@
                                             <figure>
                                                 @php
                                                     
-                                                    $raw_data = '';
-                                                    if (isset($st->image_picture)) {
-                                                        $raw_data = $st->image_picture;
-                                                    } elseif (isset($st->pictures) && is_object($st->pictures)) {
-                                                        $raw_data = $st->pictures->image_picture;
-                                                    }
-
-                                                    
-                                                    preg_match_all('/[a-zA-Z0-9_-]+\.(jpg|jpeg|png|webp)/i', $raw_data, $matches);
+                                                    preg_match_all('/[a-zA-Z0-9_-]+\.(jpg|jpeg|png|webp)/i', $st->image_picture, $matches);
                                                     $images = isset($matches[0]) ? $matches[0] : [];
                                                 @endphp
-                                                
+
                                                 @if(count($images) > 0)
                                                     @foreach($images as $image)
-                                                        @php
-                                                            $supabaseUrl = "https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/" . $image;
-                                                        @endphp
+                                                    @php
+                                                        
+                                                        $supabaseUrl = "https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/" . $image;
+                                                    @endphp
                                                         <img loading="lazy" src="{{ $supabaseUrl }}"  class="img-fluid card-img-top" alt="..." onclick="showImage('{{ asset('storage/' . $image) }}')" style="cursor: pointer;">
                                                         <div id="imageModal">
                                                             <span onclick="closeImage()">&times;</span>
@@ -113,11 +106,14 @@
                                                                                                                                                                 
                                                             <p class="price">{{$st->post->price}}$</p>
                                                         </div>
-                                                    @endforeach																																																						
-                                                 @else
-                                                        {{-- បើផលិតផលនោះគ្មានរូបភាពច្រើនសន្លឹកទេ គឺឱ្យវាបង្ហាញរូបភាពជំនួស ឬទុកទទេ --}}
-                                                        <p class="text-muted">No multiple images available</p>
-                                                @endif                       
+                                                    @endforeach				
+
+                                                @else
+                                                    
+                                                    <div class="right-right">
+                                                        <p class="price">{{$st->post->price ?? '0'}}$</p>
+                                                    </div>
+                                                @endif                          
                                                     
                                             </figure>
                                             <div class="card-body card_margine_bottom" dir="ltr">
