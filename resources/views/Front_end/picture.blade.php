@@ -89,7 +89,11 @@
                                                     $images = json_decode($st->image_picture);
                                                 @endphp
                                                 @foreach($images as $image)
-                                                    <img loading="lazy" src="https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/{{ basename($image) }}"  class="img-fluid card-img-top" alt="..." onclick="showImage('{{ asset('storage/' . $image) }}')" style="cursor: pointer;">
+                                                    @php
+                                                        
+                                                        $supabaseUrl = "https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/" . basename($image);
+                                                    @endphp
+                                                    <img loading="lazy" src="{{ $supabaseUrl }}"  class="img-fluid card-img-top" alt="..." onclick="showImage('{{ asset('storage/' . $image) }}')" style="cursor: pointer;">
                                                     <div id="imageModal">
                                                         <span onclick="closeImage()">&times;</span>
                                                         <img id="modalImg">
