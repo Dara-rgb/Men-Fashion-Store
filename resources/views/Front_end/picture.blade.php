@@ -101,11 +101,11 @@
                                                 @if(is_array($images) && count($images) > 0 && !empty(array_filter($images)))
                                                     @foreach($images as $image)
                                                         @php
-                                                            // សម្អាតឈ្មោះហ្វាយឱ្យស្អាត រួចដកយកតែឈ្មោះខាងចុង
+                                                            
                                                             $clean_image_path = str_replace('\\', '', $image);
                                                             $fileName = basename($clean_image_path);
                                                             
-                                                            // បង្កើតផ្លូវ URL ទៅកាន់ Supabase ផ្ទាល់
+                                                            
                                                             $supabaseUrl = "https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/" . $fileName;
                                                         @endphp
                                                         <img loading="lazy" src="{{ $supabaseUrl }}"  class="img-fluid card-img-top" alt="..." onclick="showImage('{{ asset('storage/' . $image) }}')" style="cursor: pointer;">
