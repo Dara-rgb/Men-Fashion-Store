@@ -87,26 +87,16 @@
                                             <figure>
                                                 @php
                                                     
-                                                    $clean_string = stripslashes(trim($st->image_picture, '"'));
+                                                    preg_match_all('/[a-zA-Z0-9_-]+\.(jpg|jpeg|png|webp)/i', $st->image_picture, $matches);
                                                     
                                                     
-                                                    $images = json_decode($clean_string, true);
-                                                    
-                                                    
-                                                    if (!is_array($images)) {
-                                                        $images = explode(',', str_replace(['[', ']', '"', '\\'], '', $st->image_picture));
-                                                    }
+                                                    $images = isset($matches[0]) ? $matches[0] : [];
                                                 @endphp
                                                 
-                                                @if(is_array($images) && count($images) > 0 && !empty(array_filter($images)))
+                                                @if(is_array($images) && count($images) > 0)
                                                     @foreach($images as $image)
                                                         @php
-                                                            
-                                                            $clean_image_path = str_replace('\\', '', $image);
-                                                            $fileName = basename($clean_image_path);
-                                                            
-                                                            
-                                                            $supabaseUrl = "https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/" . $fileName;
+                                                            $supabaseUrl = "https://ychsunvttdsjtwonmqpy.supabase.co/storage/v1/object/public/products/" . $image;
                                                         @endphp
                                                         <img loading="lazy" src="{{ $supabaseUrl }}"  class="img-fluid card-img-top" alt="..." onclick="showImage('{{ asset('storage/' . $image) }}')" style="cursor: pointer;">
                                                         <div id="imageModal">
